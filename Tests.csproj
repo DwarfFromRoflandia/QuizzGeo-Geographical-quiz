@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{35C69026-D217-06BB-3415-A9BBB97B3612}</ProjectGuid>
+    <ProjectGuid>{1FE5D10F-988C-567A-327E-F575BA0DABB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Tests</AssemblyName>
@@ -638,7 +638,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GameAssembler.csproj">
-      <Project>{96C4EF07-7F08-28EB-FC12-13E55588E836}</Project>
+      <Project>{413D00EA-B4E8-5DE4-A25A-D02C5F5744CF}</Project>
       <Name>GameAssembler</Name>
     </ProjectReference>
   </ItemGroup>

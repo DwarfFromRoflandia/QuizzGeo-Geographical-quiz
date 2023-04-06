@@ -13,9 +13,7 @@ public class SaveAndLoadData : MonoBehaviour
     [SerializeField] private LockLevel lockLevel;
     [SerializeField] private OpenAndExitInfoPanel openAndExitInfoPanel;
     [SerializeField] private SwitchPanel switchPanel;
-    [SerializeField] private SaveDataForDataBase saveDataForDataBase;
-    [SerializeField] private RegistrationMenu registrationMenu;
-    [SerializeField] private OpenAndCloseWindows openAndCloseWindows;
+
 
     [Header("Значения переменных для сохранения жизней")]
     private HeartsVersionTwo heartsVersionTwo;
@@ -58,20 +56,6 @@ public class SaveAndLoadData : MonoBehaviour
 
     public bool _isLoadGameData;//переменная, которая отвечает за то, чтобы загрузка данных не срабатывала, когда игрок только впервые заходит в игру, во избежания багов
 
-
-    [Header("Значения переменных для сохранения регистрации и авторизации пользователя")]
-    public int _ID;
-    public string _Nickname;
-    public string _Password;
-    public int _Score;
-    public int _CountGetDataFromDataBase;
-
-
-    public bool _isLoadingDataForDataBase;
-    public bool _isRegistration;
-
-    public string _nicknameInRegistration;
-    public string _passwordInRegistration;
 
 
 
@@ -128,24 +112,6 @@ public class SaveAndLoadData : MonoBehaviour
         _isOpenCreamPanel = switchPanel.IsOpenCreamPanel;
 
 
-        if (_CountGetDataFromDataBase <= 2)
-        {
-            _ID = saveDataForDataBase.ID;
-            _Nickname = saveDataForDataBase.Nickname;
-            _Password = saveDataForDataBase.Password;
-
-
-        }
-
-        _nicknameInRegistration = registrationMenu.nicknameInRegistration;
-        _passwordInRegistration = registrationMenu.passwordInRegistration;
-
-        _Score = saveDataForDataBase.Score;
-        _CountGetDataFromDataBase = saveDataForDataBase.countGetDataFromDataBase;
-
-        _isLoadingDataForDataBase = registrationMenu.IsLoadingDataForDataBase;
-        _isRegistration = openAndCloseWindows.IsRegistration;
-
 
 
         //_PullPrefabLevelForSimpleLevel = PullPrefabLevelArray.instance.PullPrefabLevelForSimpleLevel;
@@ -195,18 +161,7 @@ public class SaveAndLoadData : MonoBehaviour
             _isOpenInfoPanel = data.isOpenInfoPanel;
             _isOpenCreamPanel = data.isOpenCreamPanel;
 
-            _ID = data.ID;
-            _Nickname = data.Nickname;
-            _Password = data.Password;
 
-            _Score = data.Score;
-            _CountGetDataFromDataBase = data.CountGetDataFromDataBase;
-
-            _isLoadingDataForDataBase = data.isLoadingDataForDataBase;
-            _isRegistration = data.isRegistration;
-
-            _nicknameInRegistration = data.nicknameInRegistration;
-            _passwordInRegistration = data.passwordInRegistration;
 
             //_PullPrefabLevelForSimpleLevel = data.PullPrefabLevelForSimpleLevel;
             //_PullPrefabLevelForLimitedTimeLevel = data.PullPrefabLevelForLimitedTimeLevel;
@@ -244,17 +199,6 @@ public class SaveAndLoadData : MonoBehaviour
             openAndExitInfoPanel.IsOpenInfoPanel = data.isOpenInfoPanel;
             switchPanel.IsOpenCreamPanel = data.isOpenCreamPanel;
 
-            saveDataForDataBase.ID = data.ID;
-            saveDataForDataBase.Nickname = data.Nickname;
-            saveDataForDataBase.Password = data.Password;
-            saveDataForDataBase.Score = data.Score;
-            saveDataForDataBase.countGetDataFromDataBase = data.CountGetDataFromDataBase;
-
-            registrationMenu.IsLoadingDataForDataBase = data.isLoadingDataForDataBase;
-            openAndCloseWindows.IsRegistration = data.isRegistration;
-
-            registrationMenu.nicknameInRegistration = data.nicknameInRegistration;
-            registrationMenu.passwordInRegistration = data.passwordInRegistration;
 
             //PullPrefabLevelArray.instance.PullPrefabLevelForSimpleLevel = data.PullPrefabLevelForSimpleLevel;
             //prefabLevelArray.PrefabLevelArrayForLimitedTimeLevel = data.PullPrefabLevelForLimitedTimeLevel;

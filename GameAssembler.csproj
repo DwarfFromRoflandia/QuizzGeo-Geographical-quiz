@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{96C4EF07-7F08-28EB-FC12-13E55588E836}</ProjectGuid>
+    <ProjectGuid>{413D00EA-B4E8-5DE4-A25A-D02C5F5744CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>GameAssembler</AssemblyName>
@@ -62,12 +62,11 @@
     <Compile Include="Assets\Scripts\WebManager\DataLoader.cs" />
     <Compile Include="Assets\Scripts\WebManager\OpenAndCloseWindows.cs" />
     <Compile Include="Assets\Scripts\WebManager\ErrorsHundler.cs" />
+    <Compile Include="Assets\Scripts\WebManager\CheckPasswordAndNickname.cs" />
     <Compile Include="Assets\Scripts\WebManager\SaveDataForDataBase.cs" />
     <Compile Include="Assets\Scripts\WebManager\TestTransfer.cs" />
     <Compile Include="Assets\Scripts\WebManager\WebManager.cs" />
-    <Compile Include="Assets\Scripts\WebManager\EventManager.cs" />
     <Compile Include="Assets\Scripts\WebManager\TransferValuesForDataBase.cs" />
-    <Compile Include="Assets\Scripts\WebManager\CheckPasswordAndNickname.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\WebManager\GameAssembler.asmdef" />

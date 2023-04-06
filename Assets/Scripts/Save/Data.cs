@@ -89,17 +89,6 @@ public class Data
 
         isLoadGameData = saveAndLoadData._isLoadGameData;
 
-        ID = saveAndLoadData._ID;
-        Nickname = saveAndLoadData._Nickname;
-        Password = saveAndLoadData._Password;
-        Score = saveAndLoadData._Score;
-        CountGetDataFromDataBase = saveAndLoadData._CountGetDataFromDataBase;
-
-        isLoadingDataForDataBase = saveAndLoadData._isLoadingDataForDataBase;
-        isRegistration = saveAndLoadData._isRegistration;
-
-        nicknameInRegistration = saveAndLoadData._nicknameInRegistration;
-        passwordInRegistration = saveAndLoadData._passwordInRegistration;
 
         //PullPrefabLevelForSimpleLevel = saveAndLoadData._PullPrefabLevelForSimpleLevel;
         //PullPrefabLevelForLimitedTimeLevel = saveAndLoadData._PullPrefabLevelForLimitedTimeLevel;
