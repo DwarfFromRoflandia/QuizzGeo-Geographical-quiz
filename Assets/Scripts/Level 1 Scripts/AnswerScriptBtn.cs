@@ -66,8 +66,10 @@ public class AnswerScriptBtn : MonoBehaviour
         isClick = true;
         correctAnswer++;
         _counterOfCorrectAnswer.CountOfCorrectAnswer++;
+        CounterScoreForDataBase.countScorePlayer++;
 
         Debug.Log("Answer True");
+        Debug.Log("CounterScoreForDataBase.countScorePlayer: " + CounterScoreForDataBase.countScorePlayer);
     }
 
     public void WrongAnserHundler()

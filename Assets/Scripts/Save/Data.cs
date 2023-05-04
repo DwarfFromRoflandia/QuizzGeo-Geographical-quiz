@@ -50,6 +50,8 @@ public class Data
     public string nicknameInRegistration;
     public string passwordInRegistration;
 
+    public int countScorePlayer;
+
     //public List<GameObject> PullPrefabLevelForSimpleLevel = new List<GameObject>();
     //public List<GameObject> PullPrefabLevelForLimitedTimeLevel = new List<GameObject>();
     //public List<GameObject> PullPrefabLevelForForHardLevel = new List<GameObject>();
@@ -89,6 +91,7 @@ public class Data
 
         isLoadGameData = saveAndLoadData._isLoadGameData;
 
+        countScorePlayer = saveAndLoadData._countScorePlayer;
 
         //PullPrefabLevelForSimpleLevel = saveAndLoadData._PullPrefabLevelForSimpleLevel;
         //PullPrefabLevelForLimitedTimeLevel = saveAndLoadData._PullPrefabLevelForLimitedTimeLevel;

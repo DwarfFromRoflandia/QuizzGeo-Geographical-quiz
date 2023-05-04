@@ -15,6 +15,7 @@ public class SaveAndLoadData : MonoBehaviour
     [SerializeField] private SwitchPanel switchPanel;
 
 
+
     [Header("Значения переменных для сохранения жизней")]
     private HeartsVersionTwo heartsVersionTwo;
     private TimerHearts timerHealth;
@@ -56,8 +57,8 @@ public class SaveAndLoadData : MonoBehaviour
 
     public bool _isLoadGameData;//переменная, которая отвечает за то, чтобы загрузка данных не срабатывала, когда игрок только впервые заходит в игру, во избежания багов
 
-
-
+    [Header("Значения переменных для ,базы данных")]
+    public int _countScorePlayer;
 
     //[Header("Значения переменных для сохранения массивов с префабами уровней")]
     //public List<GameObject> _PullPrefabLevelForSimpleLevel = new List<GameObject>();
@@ -112,7 +113,7 @@ public class SaveAndLoadData : MonoBehaviour
         _isOpenCreamPanel = switchPanel.IsOpenCreamPanel;
 
 
-
+        _countScorePlayer = CounterScoreForDataBase.countScorePlayer;
 
         //_PullPrefabLevelForSimpleLevel = PullPrefabLevelArray.instance.PullPrefabLevelForSimpleLevel;
         //_PullPrefabLevelForLimitedTimeLevel = prefabLevelArray.PrefabLevelArrayForLimitedTimeLevel;
@@ -161,7 +162,7 @@ public class SaveAndLoadData : MonoBehaviour
             _isOpenInfoPanel = data.isOpenInfoPanel;
             _isOpenCreamPanel = data.isOpenCreamPanel;
 
-
+            _countScorePlayer = data.countScorePlayer;
 
             //_PullPrefabLevelForSimpleLevel = data.PullPrefabLevelForSimpleLevel;
             //_PullPrefabLevelForLimitedTimeLevel = data.PullPrefabLevelForLimitedTimeLevel;
@@ -199,7 +200,7 @@ public class SaveAndLoadData : MonoBehaviour
             openAndExitInfoPanel.IsOpenInfoPanel = data.isOpenInfoPanel;
             switchPanel.IsOpenCreamPanel = data.isOpenCreamPanel;
 
-
+            CounterScoreForDataBase.countScorePlayer = data.countScorePlayer;
             //PullPrefabLevelArray.instance.PullPrefabLevelForSimpleLevel = data.PullPrefabLevelForSimpleLevel;
             //prefabLevelArray.PrefabLevelArrayForLimitedTimeLevel = data.PullPrefabLevelForLimitedTimeLevel;
             //prefabLevelArray.PrefabLevelArrayForHardLevel = data.PullPrefabLevelForForHardLevel;

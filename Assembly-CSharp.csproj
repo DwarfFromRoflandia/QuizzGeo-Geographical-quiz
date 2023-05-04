@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Level 1 Scripts\GreenAndRedLampsList.cs" />
     <Compile Include="Assets\Scripts\LevelSelectedMenuScripts\BGTStars.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\UWantOnShop.cs" />
+    <Compile Include="Assets\Scripts\WebManager\UIManager.cs" />
     <Compile Include="Assets\Scripts\Level 1 Scripts\AnswerScriptBtn.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Save\Data.cs" />
@@ -88,12 +89,15 @@
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\SHOP\Products.cs" />
     <Compile Include="Assets\Scripts\HintsScript\UIButtonTheUsualHint.cs" />
+    <Compile Include="Assets\Scripts\WebManager\ContinueButtonInReg.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\ShopOpenAndExit.cs" />
     <Compile Include="Assets\Scripts\Transfer Scripts\TransferGem.cs" />
     <Compile Include="Assets\Scripts\SecondTestGameObjectScript.cs" />
     <Compile Include="Assets\Scripts\LevelSelectedMenuScripts\BackToGameModeMenu.cs" />
     <Compile Include="Assets\Scripts\SHOP\PurchaseIsNotAvailable.cs" />
+    <Compile Include="Assets\Scripts\Profile\CounterScoreForDataBase.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\BtnBGTMode.cs" />
+    <Compile Include="Assets\Scripts\Profile\OpenAndExit.cs" />
     <Compile Include="Assets\Scripts\ArraysQuestion\PrefabLevelArray.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\ClickMeBTN.cs" />
     <Compile Include="Assets\Scripts\HintsScript\QuantityTextTheFiftyFiftyHint.cs" />
@@ -111,7 +115,9 @@
     <Compile Include="Assets\Scripts\UI Scripts\ExitBTNToLevelSelected.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\MainMenuPlayBtn.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\HeartsVersionTwo.cs" />
+    <Compile Include="Assets\Scripts\WebManager\ContinueButtonInLog.cs" />
     <Compile Include="Assets\Scripts\Transfer Scripts\TransferTheUsualHint.cs" />
+    <Compile Include="Assets\Scripts\WebManager\FirebaseManager.cs" />
     <Compile Include="Assets\Scripts\TestButton.cs" />
     <Compile Include="Assets\Scripts\EventManager\EventManager.cs" />
     <Compile Include="Assets\Scripts\Transfer Scripts\TransferValueLevelToUnlock.cs" />
@@ -122,8 +128,6 @@
     <Compile Include="Assets\Scripts\InfoPanel\OpenAndExitInfoPanel.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\BackToMenu.cs" />
     <Compile Include="Assets\Scripts\Level 1 Scripts\StartCoroutineInTheResultPanelScript.cs" />
-    <Compile Include="Assets\Scripts\WebManager\ContinueButtonInReg.cs" />
-    <Compile Include="Assets\Scripts\WebManager\ContinueButtonInLog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
