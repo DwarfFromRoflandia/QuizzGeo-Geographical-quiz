@@ -1565,7 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 76922938}
   m_Layer: 0
-  m_Name: ProfileWinsow
+  m_Name: ProfileWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14569,7 +14569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &837315018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21042,7 +21042,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!1 &1170342095
 GameObject:
@@ -42486,12 +42486,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2094138216}
   m_Layer: 0
-  m_Name: RegistrationWinsow
+  m_Name: RegistrationWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2094138216
 Transform:
   m_ObjectHideFlags: 0
