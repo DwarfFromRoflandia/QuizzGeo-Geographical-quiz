@@ -39,6 +39,9 @@ public class Products : MonoBehaviour
 
     [SerializeField] private CountGem _countGem;
 
+    [SerializeField] private AudioClip music;
+    [SerializeField] private AudioSource audioSource;
+
 
     private const float  timeOnOffNumber = 1f; //ÂÐÅÌß ÐÀÁÎÒÛ ÊÎÐÓÒÈÍÛ ÇÀÂÈÑÈÒ ÎÒ ÂÐÅÌÅÍÈ ÀÍÈÌÀÖÈÈ ÒÎÂÀÐÎÂ
 
@@ -77,11 +80,13 @@ public class Products : MonoBehaviour
 
     }
 
+    public void ClickSound() => audioSource.PlayOneShot(music);
 
     public void ByeTheUsualHint()
     {
         Debug.Log("Bye The Usual Hint");
         SetQuantityTheUsualHint();
+        ClickSound();
 
         StartCoroutine(CoroutineBuyTheUsualHint());
         quantityAnimationTheUsualHint.SetTrigger("ClickBTN");
@@ -93,6 +98,7 @@ public class Products : MonoBehaviour
    {
         Debug.Log("Bye The Fifty-Fifty Hint");
         SetQuantityTheFiftyFiftyHint();
+        ClickSound();
 
         StartCoroutine(CoroutineTheFiftyFiftyHint());
         quantityAnimationTheFiftyFiftyHint.SetTrigger("BuyTheFiftyFiftyHint");
@@ -105,7 +111,8 @@ public class Products : MonoBehaviour
         isHeartsRecovered = true;
 
         _timerHearts.StopTimer();
-        
+        ClickSound();
+
         Debug.Log("Bye Health");
 
         _countGem.QuantityGem -= PurchaseIsNotAvailable.PriseHealth;

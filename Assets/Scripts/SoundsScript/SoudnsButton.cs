@@ -6,9 +6,8 @@ using UnityEngine.EventSystems;
 public class SoudnsButton : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private AudioClip music;
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
-    private void Start() => audioSource = GetComponent<AudioSource>();
 
     public void ClickSound() => audioSource.PlayOneShot(music);
 

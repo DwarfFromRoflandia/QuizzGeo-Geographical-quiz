@@ -86,10 +86,10 @@
     <Compile Include="Assets\Scripts\Level 1 Scripts\StarsCount.cs" />
     <Compile Include="Assets\Scripts\Level 1 Scripts\TimerRing.cs" />
     <Compile Include="Assets\Scripts\Level 1 Scripts\EarnedDiamondsText.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\SHOP\Products.cs" />
     <Compile Include="Assets\Scripts\HintsScript\UIButtonTheUsualHint.cs" />
     <Compile Include="Assets\Scripts\WebManager\ContinueButtonInReg.cs" />
+    <Compile Include="Assets\Scripts\SoundsScript\SoudnsButton.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\ShopOpenAndExit.cs" />
     <Compile Include="Assets\Scripts\Transfer Scripts\TransferGem.cs" />
     <Compile Include="Assets\Scripts\SecondTestGameObjectScript.cs" />
@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\MainMenuScripts\HeartsVersionTwo.cs" />
     <Compile Include="Assets\Scripts\WebManager\ContinueButtonInLog.cs" />
     <Compile Include="Assets\Scripts\Transfer Scripts\TransferTheUsualHint.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu\AnimationOpeningSettingsWindow.cs" />
     <Compile Include="Assets\Scripts\WebManager\FirebaseManager.cs" />
     <Compile Include="Assets\Scripts\TestButton.cs" />
     <Compile Include="Assets\Scripts\EventManager\EventManager.cs" />
@@ -128,8 +129,7 @@
     <Compile Include="Assets\Scripts\InfoPanel\OpenAndExitInfoPanel.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\BackToMenu.cs" />
     <Compile Include="Assets\Scripts\Level 1 Scripts\StartCoroutineInTheResultPanelScript.cs" />
-    <Compile Include="Assets\Scripts\SettingsMenu\AnimationOpeningSettingsWindow.cs" />
-    <Compile Include="Assets\Scripts\SoundsScript\SoudnsButton.cs" />
+    <Compile Include="Assets\Scripts\SoundsScript\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
